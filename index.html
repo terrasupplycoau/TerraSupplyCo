@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terra Supply Co. — Plastic-Free Straws for Business</title>
+<meta name="description" content="Terra Supply Co. supplies two plastic-free straws for business: rice-and-tapioca straws from AdaBiotech, Malaysia, and recycled wood-fibre straws from PlanetPak, Melbourne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #0C3F19;
+    --forest-deep: #071F0E;
+    --paper: #F1EAD8;
+    --paper-dim: #E4DAC2;
+    --paper-line: #CDBFA0;
+    --ink: #211D14;
+    --ink-soft: #4A4130;
+    --stamp: #A2672B;
+    --cream: #FBF8F0;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-script: 'Caveat', cursive;
+
+    --max: 1180px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- Dash rule motif (from the logo's flanking dashes) ---------- */
+  .dash-rule {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .dash-rule::before,
+  .dash-rule::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--paper-line);
+  }
+  .dash-rule span {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--stamp);
+    white-space: nowrap;
+  }
+
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--stamp);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--stamp);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    color: var(--forest-deep);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 14.5px;
+    letter-spacing: 0.02em;
+    padding: 14px 26px;
+    border-radius: 3px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  }
+  .btn-primary {
+    background: var(--forest);
+    color: var(--cream);
+  }
+  .btn-primary:hover { background: var(--forest-deep); transform: translateY(-2px); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--forest-deep);
+    border-color: var(--forest-deep);
+  }
+  .btn-ghost:hover { background: var(--forest-deep); color: var(--cream); transform: translateY(-2px); }
+  .btn-cream {
+    background: var(--cream);
+    color: var(--forest-deep);
+  }
+  .btn-cream:hover { background: #fff; transform: translateY(-2px); }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(241, 234, 216, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--paper-line);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    max-width: var(--max);
+    margin: 0 auto;
+    gap: 24px;
+  }
+  .logo-mark { height: 40px; width: auto; flex-shrink: 0; }
+  nav.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  nav.main-nav a {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    transition: color 0.15s ease;
+  }
+  nav.main-nav a:hover { color: var(--forest-deep); }
+  .header-cta { display: flex; align-items: center; gap: 24px; }
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+  }
+  .nav-toggle span { width: 22px; height: 2px; background: var(--forest-deep); display: block; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 88px 0 96px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 0.85fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 4.4vw, 54px);
+    line-height: 1.08;
+    margin-bottom: 22px;
+  }
+  .hero p.sub {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 46ch;
+    margin-bottom: 34px;
+  }
+  .hero-ctas { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-bottom: 18px; }
+  .hero-micro { font-size: 13px; color: var(--ink-soft); opacity: 0.8; }
+
+  /* ---------- Manifest tag (signature element) ---------- */
+  .manifest-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .manifest {
+    background: var(--cream);
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 30px 26px;
+    border-radius: 4px;
+    box-shadow: 0 30px 60px -20px rgba(7, 31, 14, 0.35), 0 2px 0 rgba(7,31,14,0.06);
+    transform: rotate(2.5deg);
+    position: relative;
+    border: 1px solid #E4DCC6;
+  }
+  .manifest::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    width: 64px;
+    height: 26px;
+    background: repeating-linear-gradient(45deg, #C7A96B, #C7A96B 3px, #B4924F 3px, #B4924F 6px);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  .manifest-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1.5px dashed var(--paper-line);
+  }
+  .manifest-title {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--forest-deep);
+  }
+  .manifest-ref { font-size: 11px; color: var(--ink-soft); margin-top: 4px; }
+  .manifest-stamp {
+    border: 2px solid var(--stamp);
+    color: var(--stamp);
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.15;
+    transform: rotate(8deg);
+    flex-shrink: 0;
+    opacity: 0.9;
+  }
+  .manifest-list { list-style: none; }
+  .manifest-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 13.5px;
+    padding: 9px 0;
+    border-bottom: 1px dotted #D8CCAF;
+    color: var(--ink);
+  }
+  .manifest-list li:last-child { border-bottom: none; }
+  .manifest-list .item { font-weight: 500; white-space: nowrap; }
+  .manifest-list .leader { flex: 1; border-bottom: 1px dotted #B9AC8C; height: 1px; margin-bottom: 4px; }
+  .manifest-list .value { font-family: var(--font-display); font-weight: 600; color: var(--forest); white-space: nowrap; font-size: 13px; }
+  .manifest-footer {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1.5px dashed var(--paper-line);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ---------- Hero photo stack (product photos) ---------- */
+  .photo-stack {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    height: 420px;
+  }
+  .photo-card {
+    position: absolute;
+    background: var(--cream);
+    padding: 10px 10px 40px;
+    border-radius: 3px;
+    box-shadow: 0 24px 50px -18px rgba(7, 31, 14, 0.32), 0 2px 0 rgba(7,31,14,0.06);
+    border: 1px solid #E4DCC6;
+  }
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+  }
+  .photo-card-back {
+    width: 220px;
+    height: 260px;
+    top: 0;
+    right: 6px;
+    transform: rotate(6deg);
+    z-index: 1;
+    padding: 40px 10px 10px;
+  }
+  .photo-card-back .photo-caption {
+    top: 12px;
+    bottom: auto;
+  }
+  .photo-card-front {
+    width: 240px;
+    height: 280px;
+    bottom: 0;
+    left: 4px;
+    transform: rotate(-5deg);
+    z-index: 2;
+  }
+  .photo-caption {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--forest-deep);
+  }
+
+  /* ---------- Marquee ---------- */
+  .marquee-strip {
+    background: var(--forest-deep);
+    overflow: hidden;
+    padding: 13px 0;
+    white-space: nowrap;
+  }
+  .marquee-track {
+    display: inline-flex;
+    animation: scroll-left 32s linear infinite;
+  }
+  .marquee-track span {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--paper);
+    opacity: 0.85;
+    padding: 0 22px;
+  }
+  @keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ---------- Section spacing ---------- */
+  section { padding: 96px 0; }
+  .section-head { max-width: 640px; margin-bottom: 56px; }
+  .section-head h2 { font-size: clamp(26px, 3vw, 36px); line-height: 1.15; }
+  .section-head p { color: var(--ink-soft); font-size: 16px; margin-top: 14px; max-width: 56ch; }
+
+  .section-alt { background: var(--paper-dim); }
+
+  /* ---------- Product comparison ---------- */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    align-items: stretch;
+    background: var(--paper-dim);
+    border: 1px solid var(--paper-line);
+  }
+  .compare-card {
+    background: var(--paper-dim);
+    padding: 40px 40px 34px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.2s ease;
+  }
+  .compare-card:hover { background: var(--cream); }
+  .compare-header { margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1.5px dashed var(--paper-line); }
+  .compare-tag {
+    font-family: var(--font-display);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--stamp);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .compare-header h3 { font-size: 22px; margin-bottom: 8px; }
+  .compare-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .compare-photos img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid #E4DCC6;
+  }
+  .compare-specs { list-style: none; margin-bottom: 28px; flex: 1; }
+  .compare-specs li {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 13.5px;
+    padding: 10px 0;
+    border-bottom: 1px dotted #D8CCAF;
+    color: var(--ink);
+  }
+  .compare-specs li:last-child { border-bottom: none; }
+  .compare-specs .item { font-weight: 500; color: var(--ink-soft); white-space: nowrap; }
+  .compare-specs .leader { flex: 1; border-bottom: 1px dotted #B9AC8C; height: 1px; margin-bottom: 4px; }
+  .compare-specs .value { font-family: var(--font-display); font-weight: 600; color: var(--forest-deep); white-space: nowrap; font-size: 13px; }
+  .compare-cta { align-self: flex-start; }
+  .compare-minorder {
+    font-family: var(--font-display);
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--stamp);
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .compare-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    background: var(--paper-line);
+    width: 1px;
+    position: relative;
+  }
+  .compare-divider span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--paper);
+    border: 1px solid var(--paper-line);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--stamp);
+  }
+  .compare-note {
+    margin-top: 28px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+
+  /* ---------- Sticky note (Why Terra Clearline) ---------- */
+  .sticky-note {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #F5EBB8;
+    padding: 32px 34px 28px;
+    border-radius: 2px;
+    box-shadow: 0 20px 40px -16px rgba(7,31,14,0.28), 0 2px 0 rgba(7,31,14,0.05);
+    transform: rotate(-1.2deg);
+  }
+  .sticky-note::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 70px;
+    height: 26px;
+    background: repeating-linear-gradient(45deg, #C7A96B, #C7A96B 3px, #B4924F 3px, #B4924F 6px);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  .sticky-note h4 {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--forest-deep);
+    margin-bottom: 16px;
+  }
+  .sticky-note ul { list-style: none; }
+  .sticky-note li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 11px;
+  }
+  .sticky-note li:last-child { margin-bottom: 0; }
+  .sticky-note li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--forest);
+  }
+
+  /* ---------- Impact ledger ---------- */
+  .impact-inner {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .impact-script img { width: 100%; max-width: 340px; }
+  .impact-intro { font-size: 16px; color: var(--ink-soft); margin: 22px 0 0; max-width: 40ch; }
+
+  .receipt {
+    background: var(--cream);
+    padding: 36px 40px;
+    border-radius: 4px;
+    box-shadow: 0 24px 50px -20px rgba(7,31,14,0.22);
+    transform: rotate(-1deg);
+    border: 1px solid #E4DCC6;
+  }
+  .receipt-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 16px 0;
+    border-bottom: 1px dotted #D8CCAF;
+  }
+  .receipt-row:last-of-type { border-bottom: none; }
+  .receipt-row .r-label { font-size: 15px; font-weight: 500; white-space: nowrap; }
+  .receipt-row .r-leader { flex: 1; border-bottom: 1px dotted #B9AC8C; height: 1px; margin-bottom: 5px; }
+  .receipt-row .r-value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--forest);
+    white-space: nowrap;
+  }
+  .receipt-note {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1.5px dashed var(--paper-line);
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Process ---------- */
+  .process-section { background: var(--forest-deep); color: var(--paper); }
+  .process-section .eyebrow { color: #C9B98A; }
+  .process-section .eyebrow::before { background: #C9B98A; }
+  .process-section h2 { color: var(--cream); }
+  .process-section .section-head p { color: #B9C9B4; }
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+  .process-step {
+    border-top: 2px solid rgba(241,234,216,0.25);
+    padding-top: 20px;
+  }
+  .process-num {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    color: #C9B98A;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .process-step h3 { color: var(--cream); font-size: 17px; margin-bottom: 10px; }
+  .process-step p { color: #B9C9B4; font-size: 14px; }
+
+  /* ---------- Certifications ---------- */
+  .cert-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .cert-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--cream);
+    border: 1px solid var(--paper-line);
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .cert-badge svg { width: 15px; height: 15px; color: var(--forest); flex-shrink: 0; }
+  .cert-footnote {
+    margin-top: 22px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Final CTA ---------- */
+  .final-cta {
+    background: var(--forest);
+    color: var(--cream);
+    text-align: center;
+    padding: 100px 0;
+  }
+  .final-cta h2 { color: var(--cream); font-size: clamp(28px, 3.6vw, 42px); margin-bottom: 16px; }
+  .final-cta p { color: #D7E4D2; font-size: 16.5px; max-width: 48ch; margin: 0 auto 34px; }
+  .final-cta-actions { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  .final-cta-contact { margin-top: 22px; font-size: 14px; color: #B9C9B4; }
+  .final-cta-contact a { text-decoration: underline; text-underline-offset: 3px; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--paper-dim);
+    border-top: 4px solid var(--forest);
+    padding: 64px 0 32px;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 48px;
+  }
+  .footer-logo { height: 44px; margin-bottom: 16px; }
+  .footer-script { font-family: var(--font-script); font-size: 22px; color: var(--forest); }
+  .footer-col h4 {
+    font-family: var(--font-display);
+    font-size: 12.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--forest-deep);
+    margin-bottom: 16px;
+  }
+  .footer-col a, .footer-col p {
+    display: block;
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  .footer-col a:hover { color: var(--forest-deep); }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    border-top: 1px solid var(--paper-line);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 880px) {
+    nav.main-nav { display: none; }
+    .nav-toggle { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+    .manifest-wrap { order: -1; padding-top: 0; }
+    .impact-inner { grid-template-columns: 1fr; }
+    .compare-grid { grid-template-columns: 1fr; }
+    .compare-divider { width: 100%; height: 40px; }
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 20px; }
+    .header-inner { padding: 14px 20px; }
+    section { padding: 64px 0; }
+    .process-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .final-cta-actions { flex-direction: column; }
+    .hero-ctas { flex-direction: column; align-items: flex-start; }
+  }
+
+  /* ---------- Mobile nav drawer ---------- */
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: var(--paper);
+    border-bottom: 1px solid var(--paper-line);
+    padding: 8px 32px 20px;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--paper-line);
+  }
+
+  /* Visible focus states */
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--stamp);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#top" aria-label="Terra Supply Co. home">
+      <img class="logo-mark" src="assets/Terra_Supply_Co_Logo.svg" alt="Terra Supply Co.">
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#products">Products</a>
+      <a href="#impact">Sustainability</a>
+      <a href="#process">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#contact" class="btn btn-primary">Request a quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#products">Products</a>
+    <a href="#impact">Sustainability</a>
+    <a href="#process">How it works</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="eyebrow">Wholesale · Plastic-Free Straws</div>
+        <h1>The smallest item on the table. The easiest switch to make.</h1>
+        <p class="sub">Terra Supply Co. sources two plastic-free straws for business — rice-and-tapioca straws and Cellulose Diacetate (CDA) straws — stocked and shipped by the case.</p>
+        <div class="hero-ctas">
+          <a href="#products" class="btn btn-primary">Request samples</a>
+          <a href="#contact" class="btn btn-ghost">Talk to sales</a>
+        </div>
+        <p class="hero-micro">Try both before you commit to a standing order.</p>
+      </div>
+
+      <div class="manifest-wrap">
+        <div class="photo-stack">
+          <div class="photo-card photo-card-back">
+            <img src="assets/straw-clear-lemon.jpg" alt="Terra Clearline straw in a glass of sparkling water with lemon">
+            <span class="photo-caption">Terra Clearline</span>
+          </div>
+          <div class="photo-card photo-card-front">
+            <img src="assets/straw-rice-cocktail.jpg" alt="Terra Rice Straws beside a cocktail with lime and mint">
+            <span class="photo-caption">Terra Rice Straws</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Rice &amp; Tapioca</span><span>&mdash;</span><span>CDA Straws</span><span>&mdash;</span><span>Australia</span><span>&mdash;</span><span>Plastic-Free</span><span>&mdash;</span><span>Compostable</span><span>&mdash;</span>
+      <span>Rice &amp; Tapioca</span><span>&mdash;</span><span>CDA Straws</span><span>&mdash;</span><span>Australia</span><span>&mdash;</span><span>Plastic-Free</span><span>&mdash;</span><span>Compostable</span><span>&mdash;</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT COMPARISON -->
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">The lineup</div>
+        <h2>Two straws. One plastic-free standard.</h2>
+        <p>Same commitment, different material — chosen based on what's going in the glass and how your service runs.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="compare-grid reveal">
+
+        <div class="compare-card">
+          <div class="compare-header">
+            <span class="compare-tag">Product 01</span>
+            <h3>Terra Rice Straws</h3>
+          </div>
+          <div class="compare-photos">
+            <img src="assets/straw-rice-macro.jpg" alt="Close-up of Terra Rice Straws">
+            <img src="assets/straw-rice-bundle.jpg" alt="A bundle of Terra Rice Straws">
+          </div>
+          <ul class="compare-specs">
+            <li><span class="item">Material</span><span class="leader"></span><span class="value">Rice flour + tapioca starch</span></li>
+            <li><span class="item">Best for</span><span class="leader"></span><span class="value">Cold drinks &amp; cocktails</span></li>
+            <li><span class="item">Order by</span><span class="leader"></span><span class="value">The case</span></li>
+          </ul>
+          <p class="compare-minorder">Starts from 600pcs/case</p>
+          <a href="#contact" class="btn btn-ghost compare-cta">Request a sample</a>
+        </div>
+
+        <div class="compare-divider" aria-hidden="true"><span>vs</span></div>
+
+        <div class="compare-card">
+          <div class="compare-header">
+            <span class="compare-tag">Product 02</span>
+            <h3>Terra Clearline</h3>
+          </div>
+          <div class="compare-photos">
+            <img src="assets/straw-clear-loose.jpg" alt="Terra Clearline straws laid out">
+            <img src="assets/straw-clear-box.jpg" alt="A box of Terra Clearline straws">
+          </div>
+          <ul class="compare-specs">
+            <li><span class="item">Material</span><span class="leader"></span><span class="value">Cellulose Diacetate (CDA)</span></li>
+            <li><span class="item">Best for</span><span class="leader"></span><span class="value">High-volume service</span></li>
+            <li><span class="item">Order by</span><span class="leader"></span><span class="value">The case</span></li>
+          </ul>
+          <p class="compare-minorder">Starts from 1200pcs/case</p>
+          <a href="#contact" class="btn btn-ghost compare-cta">Request a sample</a>
+        </div>
+
+      </div>
+
+      <p class="compare-note reveal">Not sure which option best suits your service? We'll send you both to sample — try them and choose the one that best suits your needs.</p>
+    </div>
+  </section>
+
+  <!-- IMPACT LEDGER -->
+  <section id="impact" class="section-alt">
+    <div class="wrap impact-inner">
+      <div class="reveal">
+        <div class="eyebrow">Why it adds up</div>
+        <div class="impact-script">
+          <img src="assets/Small_Choices_Big_Impact_Slogan.svg" alt="small choices. big impact.">
+        </div>
+        <p class="impact-intro">Every switch looks small on its own. Multiplied across a standing order, it isn't.</p>
+      </div>
+
+      <div class="sticky-note reveal">
+        <h4>Why Terra Clearline?</h4>
+        <ul>
+          <li>Superior durability, designed to withstand the test of time</li>
+          <li>Eco-friendly composition ensuring a minimal environmental impact</li>
+          <li>Compliance with Australian Standards</li>
+          <li>Reduced waste — eliminates the need for multiple straws per drink</li>
+          <li>Long lasting — designed to biodegrade within 3 months when exposed to seawater, compost, or landfill environments</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Getting started</div>
+        <h2>From first sample to standing order</h2>
+        <p>No long onboarding. Most teams place a first order inside two weeks.</p>
+      </div>
+      <div class="process-grid reveal">
+        <div class="process-step">
+          <span class="process-num">01</span>
+          <h3>Request samples</h3>
+          <p>Tell us how you pour. We'll send both straws to test in a real shift within two business days.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">02</span>
+          <h3>Choose your fit</h3>
+          <p>Terra Rice Straws for cold pours, Terra Clearline for high-volume service — or stock both.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">03</span>
+          <h3>Set a standing order</h3>
+          <p>Lock in pricing and a delivery cadence — weekly, monthly, whatever your bar burns through.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">04</span>
+          <h3>Track your impact</h3>
+          <p>Get a quarterly Plastic Reduction Impact Report on plastic straws displaced, by the case.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-bottom: 32px;">
+        <div class="eyebrow">Sourced responsibly</div>
+        <h2>Standards behind every straw</h2>
+      </div>
+      <div class="cert-row reveal">
+        <div class="cert-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Zero micro plastic</div>
+        <div class="cert-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 100% compostable material</div>
+        <div class="cert-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Australian Certified</div>
+        <div class="cert-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Transparency</div>
+      </div>
+      <p class="cert-footnote reveal">Supporting compliance certifications and documentation are available upon request.</p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="contact" class="final-cta">
+    <div class="wrap">
+      <h2 class="reveal">Ready to ditch the plastic straw?</h2>
+      <p class="reveal" style="margin-left:auto;margin-right:auto;">Tell us how you pour. We'll send samples of both straws and a price for your volume — no obligation.</p>
+      <div class="final-cta-actions reveal">
+        <a href="mailto:terrasupplyco.au@gmail.com" class="btn btn-cream">Request a quote</a>
+        <a href="mailto:terrasupplyco.au@gmail.com" class="btn btn-ghost" style="border-color:var(--cream);color:var(--cream);">Email the team</a>
+      </div>
+      <p class="final-cta-contact">Or reach us directly — <a href="mailto:terrasupplyco.au@gmail.com">terrasupplyco.au@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <img class="footer-logo" src="assets/Terra_Supply_Co_Logo.svg" alt="Terra Supply Co.">
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="#products">Terra Rice Straws</a>
+        <a href="#products">Terra Clearline</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#impact">Sustainability</a>
+        <a href="#process">How it works</a>
+        <a href="#">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:terrasupplyco.au@gmail.com">terrasupplyco.au@gmail.com</a>
+        <p>+61 423 795 261</p>
+        <p>Monday - Saturday, 8am&ndash;6pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Terra Supply Co. All rights reserved.</span>
+      <span class="footer-script">small choices. big impact.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
