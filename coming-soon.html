@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terra Supply Co. — Coming Soon</title>
+<meta name="description" content="Terra Supply Co. — plastic-free straws for business. Site coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #0C3F19;
+    --forest-deep: #071F0E;
+    --paper: #F1EAD8;
+    --ink: #211D14;
+    --ink-soft: #4A4130;
+    --stamp: #A2672B;
+    --cream: #FBF8F0;
+    --paper-line: #CDBFA0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--paper);
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    padding: 24px;
+  }
+  .card {
+    text-align: center;
+    max-width: 460px;
+  }
+  .logo { width: 220px; max-width: 60vw; margin: 0 auto 40px; display: block; }
+  .eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--stamp);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .eyebrow::before, .eyebrow::after {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--stamp);
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 38px);
+    color: var(--forest-deep);
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+  p.sub {
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  .script {
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    color: var(--forest);
+    margin-bottom: 34px;
+  }
+  .contact {
+    font-size: 14px;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--paper-line);
+    padding-top: 24px;
+  }
+  .contact a {
+    color: var(--forest-deep);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="assets/Terra_Supply_Co_Logo.svg" alt="Terra Supply Co.">
+    <div class="eyebrow">Coming Soon</div>
+    <h1>We're getting things ready.</h1>
+    <p class="sub">Terra Supply Co. is putting the finishing touches on our site. In the meantime, reach out directly and we'll get back to you.</p>
+    <p class="script">small choices. big impact.</p>
+    <div class="contact">
+      Get in touch — <a href="mailto:terrasupplyco.au@gmail.com">terrasupplyco.au@gmail.com</a><br>
+      +61 423 795 261
+    </div>
+  </div>
+</body>
+</html>
